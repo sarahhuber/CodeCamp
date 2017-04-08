@@ -45,7 +45,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Women in Tech Mentoring</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Women in Engineering Mentoring</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,7 +58,7 @@
                         <a class="page-scroll" href="#features">Find a Mentor</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Be a Mentor</a>
+                        <a class="page-scroll" href="#features">Be a Mentor</a>
                     </li>
                 </ul>
             </div>
@@ -68,13 +68,15 @@
     </nav>
 
     <header>
-        <div class="container">
+        <div class="container" class="download bg-primary text-center">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-15">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1></h1>
-                            <!--<a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>-->
+                          <h2 class="section-heading">Half of Iowa State's Undergraduates are in STEM fields, yet the college of engineering is only 15% women.</h2>
+                          <br><br><br>
+                          <h2> Our mission is to connect women in engineering at Iowa State past and present to build a community that mentors and empowers one another.</h2>
+                            <!--<img src="img/empower.jpg" alt="Graphic of girls holding hands" class="girls">-->
                         </div>
                     </div>
                 </div>
@@ -102,7 +104,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading">With a mentor, two is better than one</h2>
-                    <p>A mentor can be an ISU student, a professor, or an industry professional!</p>
+                    <p>This site can be used to connect you with other women in your field. Please fill out our mentor form and we will pair you with a woman in your field who resonates with your background. This effort would not be possible without volunteers to mentor Iowa State Students. We invite you, as a woman in the workplace, professor, or upperclasswoman to sign up and become a mentor. </p>
                     <div class="badges">
                       <!--  <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a> -->
                       <!--  <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a> -->
@@ -117,48 +119,57 @@
             <div class="row">
                 <div class="col-lg-12 text-left">
                     <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <h2>Sign up for a mentor here!</h2>
+                        <p class="text-muted">There are options below to personalize your mentor to you, please select all that apply and we will do our best to match you with the mentor you have the most in common with!</p>
                         <form>
-                          First Name:<br>
-                          <input type="text" name="firstname"><br>
+                          <br>
+                          <h4>Would you like to be a mentor and/or mentee:</h4>
+                          <input type="checkbox" id="mentor" value="mentor"> Mentor<br>
+                          <input type="checkbox" id="mentee" value="mentee"> Mentee<br>
+                          <br>
+                          <br>First Name:<br>
+                          <input type="text" id="firstname"><br>
                           Last Name:<br>
-                          <input type="text" name="lastname"><br>
+                          <input type="text" id="lastname"><br>
                           E-mail:<br>
-                          <input type="text" name="email"><br>
+                          <input type="text" id="email"><br>
                           Phone Number:<br>
-                          <input type="text" name="phone"><br>
+                          <input type="text" id="phone"><br>
 
                           <action="/action_page.php" method="get">
                           <br><h3>Check all that apply:</h3>
-                          <h4>Mentor Type:</h4>
-                          <input type="checkbox" name="student" value="student"> Student mentor<br>
-                          <input type="checkbox" name="professor" value="professor"> Professor as mentor<br>
-                          <input type="checkbox" name="professional" value="professional"> Workplace professional as mentor<br>
-                          <input type="checkbox" name="anyMentor" value="anyMentor"> Open to a mentor from anywhere<br>
+                          <h4>I am a:</h4>
+                          <input type="checkbox" id="student" value="student"> Student<br>
+                          <input type="checkbox" id="professor" value="professor"> Professor<br>
+                          <input type="checkbox" id="professional" value="professional"> Workplace professional<br>
+                          <h4>Looking for a mentor who is:</h4>
+                          <h5>(Mentee's only)</h5>
+                          <input type="checkbox" id="student" value="student"> Student mentor<br>
+                          <input type="checkbox" id="professor" value="professor"> Professor as mentor<br>
+                          <input type="checkbox" id="professional" value="professional"> Workplace professional as mentor<br>
+                          <input type="checkbox" id="anyMentor" value="anyMentor"> Open to a mentor from anywhere<br>
                           <h4>Select Major:</h4>
-                          <input type="checkbox" name="aerospace" value="aerospace"> Aerospace Engineering<br>
-                          <input type="checkbox" name="agBiologicalSystems" value="agBiologicalSystems"> Agricultural & Biological Systems Engineering<br>
-                          <input type="checkbox" name="chemicalBiological" value="chemicalBiological"> Chemical & Biological Engineering<br>
-                          <input type="checkbox" name="civilConstructionEnvironmental" value="civilConstructionEnvironmental"> Civil, Construction & Environmental Engineering<br>
-                          <input type="checkbox" name="electricalSoftwareComputerScience" value="electricalSoftwareComputerScience"> Computer Science or Electrical, Computer & Software Engineering<br>
-                          <input type="checkbox" name="industrialManufacturing" value="industrialManufacturing"> Industrial & Manufacturing Systems Engineering<br>
-                          <input type="checkbox" name="materials" value="materials"> Materials Science and Engineering<br>
-                          <input type="checkbox" name="mechanical" value="mechancial"> Mechanical Engineering<br>
-                          <input type="checkbox" name="undeclared" value="undeclared"> Undeclared Engineering<br>
-                          <input type="checkbox" name="anyMajor" value="anyMajor"> Open to a mentor in any major<br>
-                          <input type="checkbox" name="other" value="other"> Other <input type="text" name="other"><br>
+                          <input type="checkbox" id="aerospace" value="aerospace"> Aerospace Engineering<br>
+                          <input type="checkbox" id="agBiologicalSystems" value="agBiologicalSystems"> Agricultural & Biological Systems Engineering<br>
+                          <input type="checkbox" id="chemicalBiological" value="chemicalBiological"> Chemical & Biological Engineering<br>
+                          <input type="checkbox" id="civilConstructionEnvironmental" value="civilConstructionEnvironmental"> Civil, Construction & Environmental Engineering<br>
+                          <input type="checkbox" id="electricalSoftwareComputerScience" value="electricalSoftwareComputerScience"> Computer Science or Electrical, Computer & Software Engineering<br>
+                          <input type="checkbox" id="industrialManufacturing" value="industrialManufacturing"> Industrial & Manufacturing Systems Engineering<br>
+                          <input type="checkbox" id="materials" value="materials"> Materials Science and Engineering<br>
+                          <input type="checkbox" id="mechanical" value="mechancial"> Mechanical Engineering<br>
+                          <input type="checkbox" id="undeclared" value="undeclared"> Undeclared Engineering<br>
+                          <input type="checkbox" id="anyMajor" value="anyMajor"> Open to a mentor in any major<br>
+                          <input type="checkbox" id="other" value="other"> Other <input type="text" name="other"><br>
 
                           <br><h4>Other Options:</h4>
-                          <input type="checkbox" name="disabilities" value="disabilities"> Disability<br>
-                          <input type="checkbox" name="greek" value="greek"> Greek Community<br>
-                          <input type="checkbox" name="internationalStudent" value="internationStudent"> International Student<br>
-                          <input type="checkbox" name="lgbtq" value="lgbtq"> LGBTQ<br>
-                          <input type="checkbox" name="minority" value="minority"> Racial Minority Preferance: <input type="text" name="other"><br>
-                          <input type="checkbox" name="veteran" value="veteran"> Veteran<br><br>
+                          <input type="checkbox" id="disabilities" value="disabilities"> Disability<br>
+                          <input type="checkbox" id="greek" value="greek"> Greek Community<br>
+                          <input type="checkbox" id="internationalStudent" value="internationStudent"> International Student<br>
+                          <input type="checkbox" id="lgbtq" value="lgbtq"> LGBTQ<br>
+                          <input type="checkbox" id="minority" value="minority"> Racial Minority Preferance: <input type="text" name="other"><br>
+                          <input type="checkbox" id="veteran" value="veteran"> Veteran<br><br>
 
-
-                          <input type="submit" value="Submit">
+                          <input type="button" id="submitButton" onclick="onSubmit()" name='submit' value="Submit">
                         </form>
                         <hr>
                     </div>
@@ -222,8 +233,53 @@
     <section class="cta">
         <div class="cta-content">
             <div class="container">
-                <h2>Stop waiting.<br>Start building.</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+              <h2>Greater Than Mentoring</h2>
+              <p>By following our <a href="https://www.facebook.com/2IsGreaterThan1/?notif_t=page_fan&notif_id=1491669350039085">Facebook</a></li> page you can get a first look at our events for the entire 2>1 community.</p>
+                <!--<form>
+                  First Name:<br>
+                  <input type="text" id="firstnameM" name="firstname"><br>
+                  Last Name:<br>
+                  <input type="text" name="lastnameM"><br>
+                  E-mail:<br>
+                  <input type="text" name="emailM"><br>
+                  Phone Number:<br>
+                  <input type="text" name="phoneM"><br>
+                  Did you attend Iowa State?
+                  <INPUT TYPE="radio" NAME="iowastateM" VALUE="y">Yes
+                  <INPUT TYPE="radio" NAME="iowastateM" VALUE="n">No
+                  <action="/action_page.php" method="get">
+                  <br><h3>Check all that apply:</h3>
+                  <h4>Mentor Type:</h4>
+                  <input type="checkbox" name="studentM" value="studentM"> Student mentor<br>
+                  <input type="checkbox" name="professorM" value="professorM"> Professor as mentor<br>
+                  <input type="checkbox" name="professionalM" value="professionalM"> Workplace professional as mentor<br>
+                  <h4>Select Major:</h4>
+                  <input type="checkbox" name="aerospaceM" value="aerospaceM"> Aerospace Engineering<br>
+                  <input type="checkbox" name="agBiologicalSystemsM" value="agBiologicalSystemsM"> Agricultural & Biological Systems Engineering<br>
+                  <input type="checkbox" name="chemicalBiologicalM" value="chemicalBiologicalM"> Chemical & Biological Engineering<br>
+                  <input type="checkbox" name="civilConstructionEnvironmentalM" value="civilConstructionEnvironmentalM"> Civil, Construction & Environmental Engineering<br>
+                  <input type="checkbox" name="electricalSoftwareComputerScienceM" value="electricalSoftwareComputerScienceM"> Computer Science or Electrical, Computer & Software Engineering<br>
+                  <input type="checkbox" name="industrialManufacturingM" value="industrialManufacturingM"> Industrial & Manufacturing Systems Engineering<br>
+                  <input type="checkbox" name="materialsM" value="materialsM"> Materials Science and Engineering<br>
+                  <input type="checkbox" name="mechanicalM" value="mechancialM"> Mechanical Engineering<br>
+                  <input type="checkbox" name="undeclaredM" value="undeclaredM"> Undeclared Engineering<br>
+                  <input type="checkbox" name="anyMajorM" value="anyMajorM"> Open to a mentor in any major<br>
+                  <input type="checkbox" name="otherM" value="otherM"> Other <input type="text" name="other"><br>
+
+                  <br><h4>Other Options:</h4>
+                  <input type="checkbox" name="disabilitiesM" value="disabilitiesM"> Disability<br>
+                  <input type="checkbox" name="greekM" value="greekM"> Greek Community<br>
+                  <input type="checkbox" name="internationalStudentM" value="internationStudentM"> International Student<br>
+                  <input type="checkbox" name="lgbtqM" value="lgbtqM"> LGBTQ<br>
+                  <input type="checkbox" name="minorityM" value="minorityM"> Racial Minority Preferance: <input type="text" name="other"><br>
+                  <input type="checkbox" name="veteranM" value="veteranM"> Veteran<br><br>
+
+
+                  <input type="submit" class="btn btn-outline btn-xl page-scroll" value="Submit">
+                  <input type="button" id="submitButton" onclick="onSubmit()" name='submit' value="Submit">
+                </form> -->
+
+              <!---  <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a> -->
             </div>
         </div>
         <div class="overlay"></div>
@@ -233,15 +289,15 @@
         <div class="container">
             <h2>We <i class="fa fa-heart"></i> new friends!</h2>
             <ul class="list-inline list-social">
-                <li class="social-twitter">
+                <!--li class="social-twitter">
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
+                </li-->
                 <li class="social-facebook">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/2IsGreaterThan1/?notif_t=page_fan&notif_id=1491669350039085"><i class="fa fa-facebook"></i></a>
                 </li>
-                <li class="social-google-plus">
+                <!--li class="social-google-plus">
                     <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
+                </li-->
             </ul>
         </div>
     </section>
@@ -274,6 +330,150 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+
+    <script>
+    var exportToCSV = function(arrayOfObjects) {
+
+    if (!arrayOfObjects.length) {
+        return;
+    }
+
+    var csvContent = "data:text/csv;charset=utf-8,";
+
+    // headers
+    csvContent += objectToCSVRow(Object.keys(arrayOfObjects[0]));
+
+    arrayOfObjects.forEach(function(item){
+        csvContent += objectToCSVRow(item);
+    });
+
+    var encodedUri = encodeURI(csvContent);
+    var link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "customers.csv");
+    document.body.appendChild(link); // Required for FF
+    link.click();
+    document.body.removeChild(link);
+  }
+  var download = function (name, text) {
+    var pom = document.createElement('a');
+    pom.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(text));
+    pom.setAttribute('download', name);
+    pom.setAttribute('target', '_blank');
+
+    if (document.createEvent) {
+        var event = document.createEvent('MouseEvents');
+        event.initEvent('click', true, true);
+        pom.dispatchEvent(event);
+    } else {
+        pom.click();
+    }
+};
+    function onSubmit(){
+      var mentor;
+      var mentee;
+      var firstname;
+      var lastname;
+      var email;
+      var phone;
+      var iowastate;
+      var student;
+      var professor;
+      var professional;
+      var aerospace;
+      var agBiologicalSystems;
+      var chemicalBiological;
+      var civilConstructionEnvironmental;
+      var electricalSoftwareComputerScience;
+      var industrialManufacturing;
+      var materials;
+      var mechanical;
+      var undeclared;
+      var any;
+      var other;
+      var disabilities;
+      var greek;
+      var internationalStudent;
+      var lgbtq;
+      var minority;
+      var veteran;
+
+      var person = [];
+
+      function arrayOutput(name, array){
+        console.log(name);
+        console.log(array);
+        if (document.getElementById(name).checked){
+          array.push(name);
+        }
+        else{
+          array.push("");
+        }
+      }
+
+      mentor = document.getElementById("mentor").value;
+      arrayOutput(mentor,person);
+      mentee = document.getElementById("mentee").value;
+      arrayOutput(mentee,person);
+      firstname = document.getElementById("firstname").value;
+      person.push(firstname);
+      //arrayOutput(firstname,person);
+      lastname = document.getElementById("lastname").value;
+      person.push(lastname);
+      //arrayOutput(lastname,person);
+      email = document.getElementById("email").value;
+      person.push(email);
+      //arrayOutput(email,person);
+      phone = document.getElementById("phone").value;
+      person.push(phone);
+      //arrayOutput(phone,person);
+      //iowastate = document.getElementById("iowastate").value;
+      //arrayOutput(iowastate,person);
+      student = document.getElementById("student").value;
+      arrayOutput(student,person);
+      professor = document.getElementById("professor").value;
+      arrayOutput(professor,person);
+      professional = document.getElementById("professional").value;
+      arrayOutput(professional,person);
+      aerospace = document.getElementById("aerospace").value;
+      arrayOutput(aerospace,person);
+      agBiologicalSystems = document.getElementById("agBiologicalSystems").value;
+      arrayOutput(agBiologicalSystems,person);
+      chemicalBiological = document.getElementById("chemicalBiological").value;
+      arrayOutput(chemicalBiological,person);
+      civilConstructionEnvironmental = document.getElementById("civilConstructionEnvironmental").value;
+      arrayOutput(civilConstructionEnvironmental,person);
+      electricalSoftwareComputerScience = document.getElementById("electricalSoftwareComputerScience").value;
+      arrayOutput(electricalSoftwareComputerScience,person);
+      industrialManufacturing = document.getElementById("industrialManufacturing").value;
+      arrayOutput(industrialManufacturing,person);
+      materials = document.getElementById("materials").value;
+      arrayOutput(materials,person);
+      //mechanical = document.getElementById("mechanical").value;
+      //arrayOutput(mechanical,person);
+      undeclared = document.getElementById("undeclared").value;
+      arrayOutput(undeclared,person);
+      any = document.getElementById("anyMentor").value;
+      arrayOutput(any,person);
+      other = document.getElementById("other").value;
+      arrayOutput(other,person);
+      disabilities = document.getElementById("disabilities").value;
+      arrayOutput(disabilities,person);
+      greek = document.getElementById("greek").value;
+      arrayOutput(greek,person);
+      //internationalStudent = document.getElementById("internationalStudent").value;
+      //arrayOutput(internationalStudent,person);
+      lgbtq = document.getElementById("lgbtq").value;
+      arrayOutput(lgbtq,person);
+      minority = document.getElementById("minority").value;
+      arrayOutput(minority,person);
+      veteran = document.getElementById("veteran").value;
+      arrayOutput(veteran,person);
+      console.log(person);
+      download("test.csv",person);
+
+    }
+    </script>
 
 </body>
 
