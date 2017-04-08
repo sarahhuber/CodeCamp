@@ -126,28 +126,36 @@
                           <input type="text" name="lastname"><br>
                           E-mail:<br>
                           <input type="text" name="email"><br>
-                        </form>
-                        <form action="/action_page.php" method="get">
-                          <br><h3>Check all that apply:</h3><br>
-                          <h4>Select Major</h4>
-                          <input type="checkbox" name="aerospace" value="aerospace"> Aerospace Engineering<br>
-                          <input type="checkbox" name="agriculture" value="agriculture"> Agricultural Engineering<br>
-                          <input type="checkbox" name="biologicalSystems" value="biologicalSystems"> Biological Systems Engineering<br>
-                          <input type="checkbox" name="chemical" value="chemical"> Chemical Engineering<br>
-                          <input type="checkbox" name="civilEnvironmental" value="civilEnvironmental"> Civil & Environmental Engineering<br>
-                          <input type="checkbox" name="computer" value="computer"> Computer Engineering<br>
-                          <input type="checkbox" name="computerScience" value="computerScience"> Computer Science<br>
-                          <input type="checkbox" name="construction" value="construction"> Construction Engineering<br>
-                          <input type="checkbox" name="computer" value="computer"> Computer Engineering<br>
-                          <input type="checkbox" name="electrical" value="electrical"> Electrical Engineering<br>
-                          <input type="checkbox" name="industrial" value="industrial"> Industrial Engineering<br>
-                          <input type="checkbox" name="materials" value="materials"> Materials Engineering<br>
-                          <input type="checkbox" name="software" value="software"> Software Engineering<br>
-                          <input type="checkbox" name="" value="software"> Software Engineering<br>
-                          <input type="checkbox" name="" value="any"> Open to a mentor in any major<br>
-                          <input type="checkbox" name="other" value="other"> Other
+                          Phone Number:<br>
+                          <input type="text" name="phone"><br>
 
-                          <input type="text" name="other"><br>
+                          <action="/action_page.php" method="get">
+                          <br><h3>Check all that apply:</h3>
+                          <h4>Mentor Type:</h4>
+                          <input type="checkbox" name="student" value="student"> Student mentor<br>
+                          <input type="checkbox" name="professor" value="professor"> Professor as mentor<br>
+                          <input type="checkbox" name="professional" value="professional"> Workplace professional as mentor<br>
+                          <input type="checkbox" name="anyMentor" value="anyMentor"> Open to a mentor from anywhere<br>
+                          <h4>Select Major:</h4>
+                          <input type="checkbox" name="aerospace" value="aerospace"> Aerospace Engineering<br>
+                          <input type="checkbox" name="agBiologicalSystems" value="agBiologicalSystems"> Agricultural & Biological Systems Engineering<br>
+                          <input type="checkbox" name="chemicalBiological" value="chemicalBiological"> Chemical & Biological Engineering<br>
+                          <input type="checkbox" name="civilConstructionEnvironmental" value="civilConstructionEnvironmental"> Civil, Construction & Environmental Engineering<br>
+                          <input type="checkbox" name="electricalSoftwareComputerScience" value="electricalSoftwareComputerScience"> Computer Science or Electrical, Computer & Software Engineering<br>
+                          <input type="checkbox" name="industrialManufacturing" value="industrialManufacturing"> Industrial & Manufacturing Systems Engineering<br>
+                          <input type="checkbox" name="materials" value="materials"> Materials Science and Engineering<br>
+                          <input type="checkbox" name="mechanical" value="mechancial"> Mechanical Engineering<br>
+                          <input type="checkbox" name="undeclared" value="undeclared"> Undeclared Engineering<br>
+                          <input type="checkbox" name="anyMajor" value="anyMajor"> Open to a mentor in any major<br>
+                          <input type="checkbox" name="other" value="other"> Other <input type="text" name="other"><br>
+
+                          <br><h4>Other Options:</h4>
+                          <input type="checkbox" name="disabilities" value="disabilities"> Disability<br>
+                          <input type="checkbox" name="greek" value="greek"> Greek Community<br>
+                          <input type="checkbox" name="internationalStudent" value="internationStudent"> International Student<br>
+                          <input type="checkbox" name="lgbtq" value="lgbtq"> LGBTQ<br>
+                          <input type="checkbox" name="minority" value="minority"> Racial Minority Preferance: <input type="text" name="other"><br>
+                          <input type="checkbox" name="veteran" value="veteran"> Veteran<br><br>
 
 
                           <input type="submit" value="Submit">
@@ -157,21 +165,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <!--<div class="col-md-4">
                     <div class="device-container">
                         <div class="device-mockup iphone6_plus portrait white">
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
+                                  <!--  <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
+                              <!--  </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="col-md-8">
+              <!--  <div class="col-md-8">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
@@ -205,7 +213,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
